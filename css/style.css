@@ -1,0 +1,123 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+    background: gray;
+    color: white;
+    margin: 25%;
+    padding:0;
+    display: grid;
+    justify-items: center;
+}
+h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+}
+
+
+p {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
+footer {
+    align-content: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.column-sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 3rem 2rem;
+}
+
+.column-suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3rem 2rem;
+}
+.column-luxury {
+    background-color: hsl(179, 100%, 13%) ;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 3rem 2rem;
+}
+
+.btn-one {
+    color: hsl(31, 77%, 52%);
+    background-color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-two {
+    color:hsl(184, 100%, 22%);
+    background-color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.btn-three {
+    color:hsl(179, 100%, 13%);
+    background-color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-one:hover {
+    outline: white solid 3px;
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.btn-two:hover {
+    outline: white solid 3px;
+    color: white;
+    background-color: hsl(184, 100%, 22%)
+}
+
+.btn-three:hover {
+    outline: white solid 3px;
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+@media all and (max-width: 500px) {
+    body {
+        margin:0%;
+        padding: 5rem 1rem;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column-sedan {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .column-luxury {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
